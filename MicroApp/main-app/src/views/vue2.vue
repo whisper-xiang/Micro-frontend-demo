@@ -40,8 +40,7 @@ const handleDataChange = (e: CustomEvent): void => {
   console.log('来自子应用 child-vue2 的数据:', e.detail.data)
 }
 onMounted(() => {
-  const data = window.microApp?.getData()
-  console.log('来自基座的数据:', window.microApp, data)
+
 })
 </script>
 

@@ -7,7 +7,7 @@
 
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 const app = window.microApp // 获取主应用的window对象
 
 // ----------------------------------接收主应用下发的数据
@@ -68,6 +68,12 @@ const showMessage = (message) => {
 defineExpose({
   showMessage,
 });
+
+onMounted(() => {
+  console.log(window.rawWindow);
+  // window.a = 2
+  console.log('child-vue3 mounted:', window.a)
+})
 </script>
 
 <style scoped>

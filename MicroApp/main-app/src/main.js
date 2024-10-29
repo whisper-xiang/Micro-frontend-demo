@@ -7,7 +7,9 @@ import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
 
 // 初始化 micro-app
-microApp.start();
+microApp.start({
+  iframeSrc: "http://localhost:3000/empty.html",
+});
 
 const app = createApp(App);
 app.config.compilerOptions.isCustomElement = (tag) => tag === "micro-app";

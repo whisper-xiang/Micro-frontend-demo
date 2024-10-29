@@ -19,6 +19,9 @@ export default {
     window.microApp.addDataListener((data) => {
       console.log('child-vue2 addDataListener:', data)
     })
+
+    window.a = 1
+    console.log('child-vue2 mounted:', window.a)
   }
 }
 
