@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
+  <div class="main-wrapper">
     <Sidebar class="sidebar" />
-    <router-view id='router-container' />
+    <router-view class='router-container' />
   </div>
 </template>
 
@@ -11,7 +11,8 @@ import Sidebar from './components/Sidebar.vue'
 </script>
 
 <style scoped>
-#app {
+.main-wrapper {
+  background: greenyellow;
   display: flex;
   flex-direction: row;
   height: 100vh;
@@ -23,7 +24,7 @@ import Sidebar from './components/Sidebar.vue'
   background-color: #f5f5f5;
 }
 
-#router-container {
+.router-container {
   flex: 1;
 }
 </style>
