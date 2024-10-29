@@ -9,7 +9,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 
-const url = ref(`http://localhost:8080/child/vue2/`);
+const url = ref(`http://localhost:3002/child/vue2/`);
 const microAppData = ref({ msg: '来自基座的数据' });
 
 const handleCreate = (): void => {
