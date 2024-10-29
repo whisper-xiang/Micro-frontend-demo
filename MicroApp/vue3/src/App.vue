@@ -27,7 +27,7 @@ function onData(data) {
 // window.microApp.addDataListener(dataListener)
 
 // 监听数据变化，初始化时如果有数据则主动触发一次
-window.microApp.addDataListener(dataListener, true)
+window.microApp?.addDataListener(dataListener, true)
 
 // 解绑监听函数
 // window.microApp.removeDataListener(dataListener)
@@ -40,7 +40,7 @@ window.microApp.addDataListener(dataListener, true)
 // dispatch只接受对象作为参数
 // window.microApp.dispatch({ type: '子应用发送给主应用的数据' })
 
-window.microApp.dispatch({ city: 'HK' }, (cb) => {
+window.microApp?.dispatch({ city: 'HK' }, (cb) => {
   console.log('数据已经发送完成', cb)
 })
 
@@ -51,7 +51,7 @@ window.microApp.dispatch({ city: 'HK' }, (cb) => {
 // })
 
 
-window.microApp.addDataListener((data) => {
+window.microApp?.addDataListener((data) => {
   console.log('来自主应用的数据', data)
 
   return '返回值1'

@@ -2,7 +2,7 @@
   <div>
     <micro-app name='appname-vue3' :url='url' iframe :data='microAppData' @created='handleCreate'
       @beforemount='handleBeforeMount' @mounted='handleMount' @unmount='handleUnmount' @error='handleError'
-      @datachange='handleDataChange' ref="childAppRef"></micro-app>
+      @datachange='handleDataChange' ref="childAppRef" keep-alive></micro-app>
 
     <el-button @click="callChildAppMethod">调用子应用方法</el-button>
   </div>
