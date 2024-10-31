@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1>主应用首页</h1>
-    <!-- <el-button @click="navigator()">跳转至子应用vue2-用户管理</el-button> -->
+    <el-button @click="navigator()">跳转至子应用vue2-用户管理</el-button>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ const router = useRouter();
 import microApp from '@micro-zoe/micro-app'
 
 function navigator() {
-  microApp.router.push({ name: 'appname-vue2', path: '/user-management' })
+  microApp.router.push({ name: 'app-vue2', path: '/user-management' })
 }
 </script>
 

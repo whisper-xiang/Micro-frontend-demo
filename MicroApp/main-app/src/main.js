@@ -9,6 +9,16 @@ import "element-plus/dist/index.css";
 // 初始化 micro-app
 microApp.start({
   iframeSrc: "http://localhost:3000/empty.html",
+  preFetchApps: [
+    { name: "appname-vue2", url: `http://localhost:3002/` },
+    {
+      name: "appname-vue3",
+      url: "http://localhost:3001/",
+      level: 2,
+      "default-page": "/home",
+      iframe: true,
+    },
+  ],
 });
 
 const app = createApp(App);

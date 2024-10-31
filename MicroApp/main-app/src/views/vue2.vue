@@ -1,8 +1,8 @@
 <template>
   <div>
-    <micro-app name='appname-vue2' :url='url' baseroute='/main-vite/app-vue2' :data='microAppData'
-      @created='handleCreate' @beforemount='handleBeforeMount' @mounted='handleMount' @unmount='handleUnmount'
-      @error='handleError' @datachange='handleDataChange' keep-alive></micro-app>
+    <micro-app name='appname-vue2' :url='url' :data='microAppData' @created='handleCreate'
+      @beforemount='handleBeforeMount' @mounted='handleMount' @unmount='handleUnmount' @error='handleError'
+      @datachange='handleDataChange' prefetch></micro-app>
   </div>
 </template>
 
