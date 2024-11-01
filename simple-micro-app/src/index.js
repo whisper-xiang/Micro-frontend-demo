@@ -1,5 +1,4 @@
 // /src/index.js
-
 import { defineElement } from "./element";
 
 const SimpleMicroApp = {

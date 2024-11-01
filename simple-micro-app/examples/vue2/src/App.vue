@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld :msg="'基座应用vue@2.6.14'" />
+    <!-- 👇嵌入微前端 -->
+    <micro-app name='app' url='http://localhost:3000/'></micro-app>
   </div>
 </template>
 
